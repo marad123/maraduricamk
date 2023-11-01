@@ -29,6 +29,16 @@ h2::after {
     margin-top: 5px; 
 }
 
+h3 {
+    color: white;
+    font-size: 1.5rem;
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #a7dcb4; 
+    margin-top: 5px;
+}
+
 .container {
     max-width: 850px;
     margin: 20px auto;
@@ -65,7 +75,7 @@ ul {
     display: inline;
     margin-left: 3px;
     margin-top: 10px;
-    font-family: Calibri, sans-serif;
+    font-family: serif;
     font-size: 20px;
     color: white;
     background-color: darkseagreen;
@@ -101,6 +111,57 @@ p {
     color: #black;
 }
 
+.booking-form {
+    width: 600px;
+    padding: 15px;
+    background-color: darkseagreen;
+    border-radius: 10px;
+    color: white;
+    margin: 0 auto;
+}
+
+.booking-form input {
+    font-size: 15px;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.booking-form input[type="submit"] {
+    background-color: #FFE4E1;
+    color: black;
+    cursor: pointer;
+    font-family: serif;
+    border: none;
+    padding: 15px
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.booking-form input:hover {
+    background-color: rgba(255, 228, 225, 1.0);
+}
+
+.booking-form input[type="tel"] {
+    color: rgba(156, 36, 22, 1.0);
+}
+
+fieldset {
+    border: 2px solid darkseagreen;
+}
+
+legend {
+    font-size: 18px;
+    border: 1px solid #FFE4E1;
+    padding: 5px 10px;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -118,7 +179,7 @@ p {
 .bottom-left {
     bottom: 0;
     left: 0;
-    background-image: url('ornament2.png');
+    background-image: url('/Users/mara.durica/Downloads/ornament2.png');
     background-size: cover;
 
 }
@@ -126,6 +187,6 @@ p {
 .bottom-right {
     bottom: 0;
     right: 0;
-    background-image: url('ornament2.png');
+    background-image: url('/Users/mara.durica/Downloads/ornament2.png');
     background-size: cover;
-}
+} 
