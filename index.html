@@ -9,15 +9,19 @@
 <body>
     <header>
         <h1>Apartman za najam</h1>
+        <form action="">
+        <input type="button" value="Provjeri raspoloživost" onclick="alert('Apartman je slobodan!')">
+        </form>
     </header>
+
     <div class="container">
         <h2>O apartmanu</h2>
         <p>Ovaj prekrasan apartman smješten je na izvrsnoj lokaciji s predivnim pogledom na grad Šibenik. Udaljen je nekoliko minuta hoda od svih povijesnih znamenitosti koje ovaj predivan grad nudi. Unutrašnjost apartmana je malena, no pametno iskorištena. Uz atmosferu dobrodošlice, nudi:</p>
 
-        <img src="slikaap2.jpg">
-        <img src="slikaap3.jpg">
-        <img src="slikaap4-3.jpg">
-        <img src="slikaap5.jpg">
+        <img src="/Users/mara.durica/Downloads/slikaap2.jpg">
+        <img src="/Users/mara.durica/Downloads/slikaap3.jpg">
+        <img src="/Users/mara.durica/Downloads/slikaap4-3.jpg">
+        <img src="/Users/mara.durica/Downloads/slikaap5.jpg">
 
         <ul class="first-list">
             <li>
@@ -70,10 +74,56 @@
 
         <p> 📍 Lokacija: Ulica 123, 22000 Šibenik, Hrvatska </p>
 
-        <h2>Kontaktirajte nas!</h2>
-        <p>Ako ste zainteresirani, molimo kontaktirajte nas na <a href="tel:+123456789">123-456-789</a> ili putem e-maila na <a href="mailto:info@apartman.com">info@apartman.com</a>.</p>
+        <form class="booking-form">
+        <h3>Rezervirajte odmah!</h3>
+        <fieldset>
+            <legend>Kontakt informacije</legend>
+        <label for="name">Ime:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="surname">Prezime:</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="on" required>
+
+        <label for="password">Lozinka:</label>
+        <input type="password" id="password" name="password" minlength="6" maxlength="20" required>
+
+        <label for="phone">Broj telefona:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+385" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Bukiranje</legend>
+        <label for="checkin">Datum prijave:</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Datum odjave:</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <label for="broj-ljudi">Broj osoba:</label>
+        <input list="broj-ljudi-options" id="broj-ljudi" name="broj-ljudi" required>
+        <datalist id="broj-ljudi-options">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+        </datalist>
+
+        </fieldset>
+
+        <input type="submit" value="Rezerviraj">
+    </form>
+
+    <h2>Kontaktirajte nas!</h2>
+        <p>Ukoliko imate kakvih pitanja, molimo kontaktirajte nas na <a href="tel:+123456789">123-456-789</a> ili putem e-maila na <a href="mailto:info@apartman.com">info@apartman.com</a>.</p>
+
     </div>
 
-    <img src="ornament3.png" class="center">
+    <img src="/Users/mara.durica/Downloads/ornament3.png" class="center">
     <div class="corner-image bottom-left"></div>
     <div class="corner-image bottom-right"></div>
+
+</body>
+</html>
