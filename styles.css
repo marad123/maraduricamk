@@ -247,7 +247,7 @@ legend {
 .bottom-left {
     bottom: 0;
     left: 0;
-    background-image: url('/Users/mara.durica/Downloads/ornament2.png');
+    background-image: url('ornament2.png');
     background-size: cover;
 
 }
@@ -255,6 +255,6 @@ legend {
 .bottom-right {
     bottom: 0;
     right: 0;
-    background-image: url('/Users/mara.durica/Downloads/ornament2.png');
+    background-image: url('ornament2.png');
     background-size: cover;
 } 
