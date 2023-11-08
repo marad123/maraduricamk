@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -18,10 +18,10 @@
         <h2>O apartmanu</h2>
         <p>Ovaj prekrasan apartman smješten je na izvrsnoj lokaciji s predivnim pogledom na grad Šibenik. Udaljen je nekoliko minuta hoda od svih povijesnih znamenitosti koje ovaj predivan grad nudi. Unutrašnjost apartmana je malena, no pametno iskorištena. Uz atmosferu dobrodošlice, nudi:</p>
 
-        <img src="slikaap2.jpg">
-        <img src="slikaap3.jpg">
-        <img src="slikaap4-3.jpg">
-        <img src="slikaap5.jpg">
+        <img src="/Users/mara.durica/Downloads/slikaap2.jpg">
+        <img src="/Users/mara.durica/Downloads/slikaap3.jpg">
+        <img src="/Users/mara.durica/Downloads/slikaap4-3.jpg">
+        <img src="/Users/mara.durica/Downloads/slikaap5.jpg">
 
         <ul class="first-list">
             <li>
@@ -71,8 +71,58 @@
        <li><strong>Površina: 50m<sup>2</sup></strong></li>
        </ul>
 
+<table>
+    <caption>Znamenitosti i njihove udaljenosti od apartmana</caption>
+    <thead>
+        <tr>
+            <td>Katedrala sv. Jakova</td>
+            <td>1 km</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tvrđava sv. Ivana</td>
+            <td rowspan="2">2 km</td>
+        </tr>
+        <tr>
+            <td>Tvrđava Barone</td>
+        </tr>
+        <tr>
+            <td>Tvrđava sv. Mihovila</td>
+            <td>4 km</td>
+        </tr>
+        <tr>
+            <td>Tvrđava sv. Nikole</td>
+            <td>6 km</td>
+        </tr>
+        <tr>
+            <td colspan="2">Ostale znamenitosti u krugu od 10 km</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+  const rows = document.querySelectorAll("tbody tr");
+
+  rows.forEach((row, index) => {
+    if (index % 2 === 0) {
+      row.style.backgroundColor = "WhiteSmoke";
+    }
+  });
+</script>
 
         <p> 📍 Lokacija: Ulica 123, 22000 Šibenik, Hrvatska </p>
+
+<div class="custom-list">
+<h4>Poveznice s dodatnim informacijama</h4>
+<ul>
+    <li><a href="https://www.google.com/maps" target="_blank">Google Maps</a></li>
+    <li><a href="https://www.sibenik.hr" target="_blank">Šibenik.hr</a></li>
+    <li><a href="https://www.sibenik-tourism.hr" target="_blank">Šibenska turistička zajednica</a></li>
+</ul>
+</div>
+
+&nbsp;
 
         <form class="booking-form">
         <h3>Rezervirajte odmah!</h3>
@@ -121,7 +171,7 @@
 
     </div>
 
-    <img src="ornament3.png" class="center">
+    <img src="/Users/mara.durica/Downloads/ornament3.png" class="center">
     <div class="corner-image bottom-left"></div>
     <div class="corner-image bottom-right"></div>
 
