@@ -5,37 +5,16 @@ body {
     background-color: #ffe4e1; 
 }
 
-header {
+#main-header {
     background-color: #a7dcb4; 
     color: #black; 
     text-align: center;
     padding: 20px;
 }
 
-h1 {
+#main-header h1 {
     font-size: 3.5rem;
     color: white;
-}
-
-h2 {
-    color: #794936;
-}
-
-h2::after {
-    content: "";
-    display: block;
-    width: 100%;
-    border-bottom: 2px solid #a7dcb4; 
-    margin-top: 5px; 
-}
-
-h3 {
-    color: white;
-    font-size: 1.5rem;
-    display: block;
-    width: 100%;
-    border-bottom: 2px solid #a7dcb4; 
-    margin-top: 5px;
 }
 
 .container {
@@ -46,6 +25,28 @@ h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     position: relative;
+}
+
+.container h2 {
+    color: #794936;
+    border-bottom: 2px solid #a7dcb4; 
+    padding-bottom: 5px; 
+    margin-bottom: 20px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.container p {
+    text-align: justify;
+}
+
+h3 {
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #a7dcb4; 
+    margin-top: 5px;
 }
 
 ul {
@@ -63,11 +64,6 @@ ul {
     color: darkseagreen;
     font-weight: bold;
     font-style: italic;
-}
-
-.inline-list {
-    list-style: none;
-    padding: 0;
 }
 
 .inline-list li {
@@ -93,7 +89,6 @@ ul {
     width: 500px;
     margin-left: 25px;
 }
-
 
 a {
     color: #794936;
@@ -149,6 +144,8 @@ tbody tr:nth-child(odd) {
     font-size: 24px;
     border-bottom: 2px solid darkseagreen;  
     font-weight: bold;
+    padding: 10px;
+    margin: 0;
 }
 
 .custom-list ul {
@@ -158,6 +155,8 @@ tbody tr:nth-child(odd) {
     border: 2px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 10px;
   }
 
 .custom-list li {
@@ -172,8 +171,13 @@ tbody tr:nth-child(odd) {
 .custom-list a {
     text-decoration: none;
     color: darkseagreen;
-    padding: 10px 0;
   }
+
+.custom-list li a {
+    padding: 10px 0;
+    display: block;
+    margin-bottom: 5px;
+}
 
 .custom-list a:hover {
     background-color: lightpink;
@@ -186,6 +190,11 @@ tbody tr:nth-child(odd) {
     border-radius: 10px;
     color: white;
     margin: 0 auto;
+    position: relative;
+    top: 10px;
+    clear: both;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 .booking-form input {
@@ -206,10 +215,10 @@ tbody tr:nth-child(odd) {
     border: none;
     padding: 15px
     font-size: 14px;
-    cursor: pointer;
     display: block;
     margin: 0 auto;
     width: 150px;
+    clear: both;
 }
 
 .booking-form input:hover {
@@ -220,14 +229,15 @@ tbody tr:nth-child(odd) {
     color: rgba(156, 36, 22, 1.0);
 }
 
-fieldset {
-    border: 2px solid darkseagreen;
-}
-
-legend {
+.booking-form fieldset legend {
     font-size: 18px;
     border: 1px solid #FFE4E1;
     padding: 5px 10px;
+}
+
+[ href ] {
+    color: #794936;
+    text-decoration: underline;
 }
 
 .center {
@@ -244,16 +254,19 @@ legend {
     background: cover;
 }
 
-.bottom-left {
+.corner-image {
     bottom: 0;
-    left: 0;
     background-image: url('ornament2.png');
     background-size: cover;
+    position: fixed;
+}
+
+.bottom-left {
+    left: 0;
+    top: 0;
 }
 
 .bottom-right {
-    bottom: 0;
     right: 0;
-    background-image: url('ornament2.png');
-    background-size: cover;
-} 
+    top: 0;
+}
