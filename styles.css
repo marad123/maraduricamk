@@ -5,6 +5,68 @@ body {
     background-color: #ffe4e1; 
 }
 
+.smajlic {
+  position: relative;
+}
+
+.kvadrat {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, pink, white);
+  position: absolute;
+  z-index: 1;
+}
+
+.kvadrat:nth-child(1) {
+  top: 20px;
+  right: 20px;
+}
+
+.kvadrat:nth-child(2) {
+  top: 20px;
+  right: 100px;
+}
+
+.kvadrat:nth-child(3) {
+  top: 100px;
+  right: 20px;
+}
+
+.kvadrat:nth-child(4) {
+  top: 100px;
+  right: 40px;
+}
+
+.kvadrat:nth-child(5) {
+  top: 100px;
+  right: 60px;
+}
+
+.kvadrat:nth-child(6) {
+  top: 100px;
+  right: 80px;
+}
+
+.kvadrat:nth-child(7) {
+  top: 100px;
+  right: 100px;
+}
+
+.kvadrat:nth-child(8) {
+  top: 100px;
+  right: 100px;
+}
+
+.kvadrat:nth-child(9) {
+  top: 80px;
+  right: 120px;
+}
+
+.kvadrat:nth-child(10) {
+  top: 80px;
+  right: 0px;
+}
+
 #main-header {
     background-color: #a7dcb4; 
     color: #black; 
@@ -38,6 +100,17 @@ body {
 
 .container p {
     text-align: justify;
+}
+
+.slike {
+  display: flex;
+}
+
+.meki-rub {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
 h3 {
