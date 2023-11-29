@@ -256,6 +256,11 @@ tbody tr:nth-child(odd) {
     background-color: lightpink;
 }
 
+.google-maps iframe {
+    margin-top: 60px;
+    margin-left: 120px;
+}
+
 .booking-form {
     width: 600px;
     padding: 15px;
@@ -308,6 +313,23 @@ tbody tr:nth-child(odd) {
     padding: 5px 10px;
 }
 
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.video p {
+  margin: 0;
+  margin-left: 0;
+}
+
+.video iframe {
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
 [ href ] {
     color: #794936;
     text-decoration: underline;
@@ -342,4 +364,67 @@ tbody tr:nth-child(odd) {
 .bottom-right {
     right: 0;
     top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #a7dcb4;
+  }
+
+  #main-header {
+    background-color: #C4A484;
+  }
+
+  .smajlic {
+    display: none;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .slike {
+    width: 62%;
+  }
+
+  .meki-rub {
+    width: 38%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .first-list,
+  .inline-list,
+  .neuredena-lista {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
+  .line {
+    width: 100%; 
+    margin-left: 0;
+  }
+
+  .custom-list ul {
+    padding: 10px;
+  }
+
+  .booking-form {
+    width: 95%; 
+    margin-left: 0;
+  }
+
+  .google-maps iframe {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .video p {
+    font-size: 100%;
+  }
+
+  .corner-image {
+    display: none;
+  }
 }
