@@ -321,13 +321,46 @@ tbody tr:nth-child(odd) {
 }
 
 .video p {
-  margin: 0;
-  margin-left: 0;
+    margin: 0;
+    margin-left: 0;
 }
 
 .video iframe {
-  margin-top: 10px;
-  margin-bottom: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.video video {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.klapa {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facebook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.facebook p {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.facebook img {
+    width: 7%;
+    display: inline;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 50px;
 }
 
 [ href ] {
@@ -410,14 +443,18 @@ tbody tr:nth-child(odd) {
   }
 
   .booking-form {
-    width: 95%; 
-    margin-left: 0;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 
   .google-maps iframe {
     width: 100%;
-    margin-top: 40px;
     margin-left: 0;
+  }
+
+  .klapa p{
+    font-size: 100%;
   }
 
   .video p {
