@@ -254,6 +254,7 @@ tbody tr:nth-child(odd) {
 
 .custom-list a:hover {
     background-color: lightpink;
+    transition: background-color 0.5s ease;
 }
 
 .google-maps iframe {
@@ -283,6 +284,7 @@ tbody tr:nth-child(odd) {
     background-color: white;
     border: 1px solid gray;
     border-radius: 10px;
+    transition: background-color 0.5s ease;
 }
 
 .booking-form input[type="submit"] {
@@ -297,14 +299,21 @@ tbody tr:nth-child(odd) {
     margin: 0 auto;
     width: 150px;
     clear: both;
+    transition: color 0.3s ease
 }
 
 .booking-form input:hover {
     background-color: rgba(255, 228, 225, 1.0);
+    color: white;
 }
 
 .booking-form input[type="tel"] {
     color: rgba(156, 36, 22, 1.0);
+}
+
+.booking-form input:focus {
+    border: 2px solid #dba4c2;
+    outline: none;
 }
 
 .booking-form fieldset legend {
@@ -330,9 +339,17 @@ tbody tr:nth-child(odd) {
     margin-bottom: 20px;
 }
 
+.video:hover iframe {
+    transform: rotate(5deg);
+}
+
 .video video {
     margin-top: 10px;
     margin-bottom: 50px;
+}
+
+.video:hover video {
+    transform: rotate(5deg);
 }
 
 .klapa {
@@ -361,6 +378,11 @@ tbody tr:nth-child(odd) {
     height: auto;
     vertical-align: middle;
     margin-bottom: 50px;
+    transition: transform 0.3s ease;
+}
+
+.facebook img:active {
+    transform: scale(0.5);
 }
 
 [ href ] {
