@@ -69,6 +69,7 @@ body {
 
 #main-header {
     background-color: #a7dcb4; 
+    animation: promjenaBoje1 5s infinite;
     color: #black; 
     text-align: center;
     padding: 20px;
@@ -90,12 +91,18 @@ body {
 }
 
 .container h2 {
-    color: #794936;
+    animation: promjenaBoje3 2s infinite;
     border-bottom: 2px solid #a7dcb4; 
     padding-bottom: 5px; 
     margin-bottom: 20px;
     margin-top: 1px;
     text-align: center;
+}
+
+@keyframes promjenaBoje3 {
+    0% { color: #794936; }
+    50% { color: #a7dcb4; }
+    100% { color: #794936; }
 }
 
 .container p {
@@ -131,12 +138,25 @@ ul {
     margin-left: 25px;
 }
 
-.emphasis {
+.first-list li:first-child {
+    font-weight: bold;
+}
+
+.first-list ul:nth-of-type(odd) {
+    background-color: rgba(255, 228, 225, 0.5);
+}
+
+.first-list li > span {
     font-family: ;
     font-size: 26px;
     color: darkseagreen;
     font-weight: bold;
     font-style: italic;
+}
+
+.first-list ~ ul {
+    margin-top: 10px;
+    color: darkseagreen;
 }
 
 .inline-list li {
@@ -156,6 +176,11 @@ ul {
 .neuredena-lista li {
     font-size: 20px;
     margin-left: 25px;
+}
+
+.neuredena-lista li + li {
+    margin-left: 650px;
+    margin-top: 0px;
 }
 
 .line {
@@ -421,6 +446,12 @@ tbody tr:nth-child(odd) {
     top: 0;
 }
 
+@keyframes promjenaBoje1 {
+    0% { background-color: #a7dcb4; }
+    50% { background-color: #C4A484; }
+    100% { background-color: #a7dcb4; }
+}
+
 @media only screen and (max-width: 600px) {
   body {
     background-color: #a7dcb4;
@@ -428,7 +459,14 @@ tbody tr:nth-child(odd) {
 
   #main-header {
     background-color: #C4A484;
+    animation: promjenaBoje2 5s infinite;
   }
+
+  @keyframes promjenaBoje2 {
+    0% { background-color: #C4A484; }
+    50% { background-color: #ffe4e1; }
+    100% { background-color: #C4A484; }
+}
 
   .smajlic {
     display: none;
